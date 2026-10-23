@@ -120,7 +120,7 @@ namespace com_methods {
 		double fraction3 = pos3 - low3;
 		q3 = sorted_values[low3] * (1.0 - fraction3) + sorted_values[high3] * fraction3;
 
-		double IQR = q3 - q1; // межквартильный размах
+		double IQR = q3 - q1;
 
 		// определение выбросов
 		double LOW = q1 - 1.5 * IQR;
