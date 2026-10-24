@@ -60,7 +60,6 @@ namespace com_methods {
 		};
 
 		for (int i = 0; i < num_segments; i++) {
-			//double w = 1.0;
 			Assembling(i, this->points[i], F_value[i], omega[i]);
 			Assembling(i, this->points[i + 1], F_value[i + 1], omega[i + 1]);
 
@@ -128,7 +127,7 @@ namespace com_methods {
 
 		for (int i = 0; i < random_values.size(); i++) {
 			if (random_values[i] < LOW || random_values[i] > HIGH) {
-				omega.push_back(0.3);
+				omega.push_back(0.1);
 			}
 			else {
 				omega.push_back(1.0);

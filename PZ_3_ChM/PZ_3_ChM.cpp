@@ -11,7 +11,6 @@ int main() {
 	try {
 		setlocale(LC_ALL, "rus");
 		const int N = 1953; const double M = 1.01; const double s = 3.88;
-
 		std::random_device rd;
 		std::mt19937 gen(rd());
 		std::normal_distribution<double> d(M, s);
